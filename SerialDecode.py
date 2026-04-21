@@ -5,11 +5,11 @@ import os
 from datetime import datetime
 
 # Configuration
-SERIAL_PORT = 'COM8' 
+SERIAL_PORT = 'COM14' 
 BAUD_RATE = 9600
 PACKET_SIZE = 9  # 1 byte (ID+Sync) + 8 bytes Data
-SYNC_MASK = 0xFC # 11111100 in binary
-SYNC_BITS = 0xA8 # 10101000 in binary (The pattern to match)
+SYNC_MASK = 0xF0 # 11111100 in binary
+SYNC_BITS = 0xA0 # 10101000 in binary (The pattern to match)
 
 device_registry = {}
 
